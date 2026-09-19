@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ペルラ号の店開き</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #1a1a2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      /*
+        Phaser の DOM コンテナ（クラフトメニューの数量入力に使う）は
+        親要素が指定されていないと作られない（Phaser の CreateDOMContainer）。
+        キャンバスと DOM コンテナを同じ箱に入れて位置をそろえる。
+      */
+      #game { position: relative; }
+    </style>
+    <script type="module" crossorigin src="/shop-puzzle-play/assets/index-CFf1vTya.js"></script>
+    <link rel="modulepreload" crossorigin href="/shop-puzzle-play/assets/phaser-Czz4FBZH.js">
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>
