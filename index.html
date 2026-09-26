@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ペルラ号の店開き</title>
+
+    <!--
+      公開ページ用のメタ情報（#134）。
+      ⚠ og:image は絶対 URL でないと読まれない。base（/shop-puzzle-play/）を含めること。
+      ⚠ ogp.png と favicon.png は public/ 直下に置く（art/press/ の原本から写す）。
+    -->
+    <meta name="description" content="四つの島を回る行商の店。升目の形をした品を売り場に並べ、材料から品を作って、商船を買う日を目指します。" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ペルラ号の店開き" />
+    <meta property="og:description" content="四つの島を回る行商の店。升目の形をした品を売り場に並べ、材料から品を作って、商船を買う日を目指します。" />
+    <meta property="og:url" content="https://primevalsistail.github.io/shop-puzzle-play/" />
+    <meta property="og:image" content="https://primevalsistail.github.io/shop-puzzle-play/ogp.png" />
+    <meta property="og:site_name" content="ペルラ号の店開き" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ペルラ号の店開き" />
+    <meta name="twitter:description" content="四つの島を回る行商の店。升目の形をした品を売り場に並べ、材料から品を作って、商船を買う日を目指します。" />
+    <meta name="twitter:image" content="https://primevalsistail.github.io/shop-puzzle-play/ogp.png" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #1a1a2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #game { position: relative; }
+    </style>
+    <script type="module" crossorigin src="/shop-puzzle-play/assets/index-Cr-Gyunc.js"></script>
+    <link rel="modulepreload" crossorigin href="/shop-puzzle-play/assets/phaser-Czz4FBZH.js">
+  </head>
+  <body>
+    <div id="game"></div>
+  </body>
+</html>
